@@ -2,9 +2,9 @@
 
 namespace App\Models;
 
-use Jenssegers\Mongodb\Eloquent\Model as Eloquent;
+use Jenssegers\Mongodb\Eloquent\Model;
 
-class Agency extends Eloquent
+class Agency extends Model
 {
     //use HasFactory;
     protected $primaryKey = '_id';
