@@ -2,11 +2,13 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Jenssegers\Mongodb\Eloquent\Model;
 
 class Agency extends Model
 {
-    //use HasFactory;
+    use HasFactory;
+
     protected $primaryKey = '_id';
     protected $fillable = [
         'manager_id',

@@ -30,11 +30,10 @@ class CreateTraysTable extends Migration
             $table->string('viber');
             $table->string('whatsapp');
             $table->string('url');
+            $table->timestamps();
 
             $table->foreign('agency_id')->references('_id')->on('agencies')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('state_id')->references('_id')->on('states')->onDelete('cascade')->onUpdate('cascade');
-
-            $table->timestamps();
         });
     }
 

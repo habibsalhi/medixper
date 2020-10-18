@@ -20,15 +20,15 @@ class CreateAgenciesTable extends Migration
 
             $table->string('name');
             $table->string('code')->nullable();
-            $table->integer('phone');
-            $table->integer('fax');
+            $table->string('phone');
+            $table->string('fax');
             $table->string('email')->unique();
             $table->string('address');
             $table->boolean('status');
+            $table->timestamps();
 
             $table->foreign('manager_id')->references('_id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('state_id')->references('_id')->on('states')->onDelete('cascade')->onUpdate('cascade');
-            $table->timestamps();
         });
     }
 

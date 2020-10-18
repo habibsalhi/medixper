@@ -20,10 +20,10 @@ class CreateHousingPricesTable extends Migration
 
             $table->float('patient');
             $table->float('accompany');
+            $table->timestamps();
 
             $table->foreign('hotel_id')->references('_id')->on('hotels')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('housing_id')->references('_id')->on('housings')->onDelete('cascade')->onUpdate('cascade');
-            $table->timestamps();
         });
     }
 

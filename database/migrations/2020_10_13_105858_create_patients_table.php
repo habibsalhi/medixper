@@ -27,9 +27,9 @@ class CreatePatientsTable extends Migration
             $table->string('country')->nullable();
             $table->string('zip_code')->nullable();
             $table->string('city')->nullable();
+            $table->timestamps();
 
             $table->foreign('state_id')->references('_id')->on('states')->onDelete('cascade')->onUpdate('cascade');
-            $table->timestamps();
         });
     }
 

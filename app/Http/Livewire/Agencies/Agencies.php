@@ -2,45 +2,54 @@
 
 namespace App\Http\Livewire\Agencies;
 
-use App\Models\Agency;
+use App\Models\Agency as agenc;
 use Livewire\Component;
+use Livewire\WithPagination;
 
 class Agencies extends Component
 {
-    public $agencies, $name, $code, $agency_id, $manager_id, $phone, $fax, $email, $address, $status, $state_id;
+    use WithPagination;
+
+    public $agencies, $name, $code, $agency_id, $phone, $fax, $email, $address, $country, $status;
+    public $isOpen = 0;
     public $updateMode = false;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     public function render()
     {
-        $this->agencies = Agency::all();
-        return view('livewire.agencies.agencies');
+
+        return view('livewire.agencies.agencies', [
+            'agenciess' => agenc::paginate(10),
+        ]);
     }
 
-    public function store()
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    public function create()
     {
-        /*$validatedDate = $this->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-        ]);*/
+        $this->resetInputFields();
+    }
 
-        Agency::create(['id' => $this->agency_id], [
-            'name' => $this->name,
-            'code' => $this->code,
-            'phone' => $this->phone,
-            'fax' => $this->fax,
-            'email' => $this->email,
-            'address' => $this->address,
-            'status' => 1,
-        ]);
-
-        session()->flash('message', 'Agency Created Successfully.');
-
+    public function cancel()
+    {
+        $this->updateMode = false;
         $this->resetInputFields();
 
-        $this->emit('userStore'); // Close model to using to jquery
 
     }
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     private function resetInputFields()
     {
         $this->name = '';
@@ -52,40 +61,77 @@ class Agencies extends Component
 
         $this->email = '';
         $this->address = '';
-
-        $this->status = '';
+        $this->country = '';
     }
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
+    public function store()
+    {
+        /*$this->validate([
+            'title' => 'required',
+            'body' => 'required',
+        ]);*/
+        agenc::updateOrCreate([
+            'name' => $this->name,
+            'code' => $this->code,
+            'phone' => $this->phone,
+            'fax' => $this->fax,
+            'email' => $this->email,
+            'address' => $this->address,
+            'country' => $this->country,
+            'status' => 1,
+        ]);
+
+        session()->flash('message',
+            $this->agency_id ? 'Post Updated Successfully.' : 'Post Created Successfully.');
+
+        $this->resetInputFields();
+
+        $this->emit('userStore');
+    }
+
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     public function edit($id)
     {
         $this->updateMode = true;
-        $user = Agency::where('id', $id)->first();
+        $agencies = agenc::findOrFail($id);
         $this->agency_id = $id;
-        $this->name = $user->name;
-        $this->email = $user->email;
 
-    }
+        $this->name = $agencies->name;
+        $this->code = $agencies->code;
+        $this->phone = $agencies->phone;
+        $this->fax = $agencies->fax;
+        $this->email = $agencies->email;
+        $this->address = $agencies->address;
+        $this->country = $agencies->country;
+        $this->status = 1;
 
-    public function cancel()
-    {
-        $this->updateMode = false;
-        $this->resetInputFields();
-
-
+        //$this->openModal();
     }
 
     public function update()
     {
-        $validatedDate = $this->validate([
-            'name' => 'required',
-            'email' => 'required|email',
-        ]);
+
 
         if ($this->agency_id) {
-            $user = Agency::find($this->agency_id);
-            $user->update([
+            $agency = agenc::find($this->agency_id);
+            $agency->update([
                 'name' => $this->name,
+                'code' => $this->code,
+                'phone' => $this->phone,
+                'fax' => $this->fax,
                 'email' => $this->email,
+                'address' => $this->address,
+                'country' => $this->country,
+                'status' => 1,
             ]);
             $this->updateMode = false;
             session()->flash('message', 'Users Updated Successfully.');
@@ -94,11 +140,14 @@ class Agencies extends Component
         }
     }
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array
+     */
     public function delete($id)
     {
-        if ($id) {
-            Agency::where('id', $id)->delete();
-            session()->flash('message', 'Users Deleted Successfully.');
-        }
+        agenc::find($id)->delete();
+        session()->flash('message', 'Agency Deleted Successfully.');
     }
 }

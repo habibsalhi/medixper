@@ -32,12 +32,11 @@ class CreateSitesTable extends Migration
             $table->string('youtube')->nullable();
             $table->string('viber')->nullable();
             $table->string('whatsapp')->nullable();
+            $table->timestamps();
 
             $table->foreign('agency_id')->references('_id')->on('agencies')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('tray_id')->references('_id')->on('trays')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('state_id')->references('_id')->on('states')->onDelete('cascade')->onUpdate('cascade');
-
-            $table->timestamps();
         });
     }
 

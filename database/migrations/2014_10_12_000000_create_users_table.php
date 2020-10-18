@@ -28,10 +28,10 @@ class CreateUsersTable extends Migration
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
+            $table->timestamps();
 
             $table->foreign('state_id')->references('_id')->on('states')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('tray_id')->references('_id')->on('trays')->onDelete('cascade')->onUpdate('cascade');
-            $table->timestamps();
         });
     }
 

@@ -28,9 +28,9 @@ class CreateClinicalsTable extends Migration
             $table->string('latitude');
             $table->string('longitude');
             $table->boolean('status');
+            $table->timestamps();
 
             $table->foreign('state_id')->references('_id')->on('states')->onDelete('cascade')->onUpdate('cascade');
-            $table->timestamps();
         });
     }
 

@@ -17,10 +17,10 @@ class CreateClinicalDoctorsTable extends Migration
             //$table->bigIncrements('id');
             $table->string('doctor_id');
             $table->string('clinical_id');
+            $table->timestamps();
 
             $table->foreign('doctor_id')->references('_id')->on('users')->onDelete('cascade')->onUpdate('cascade');
             $table->foreign('clinical_id')->references('_id')->on('clinicals')->onDelete('cascade')->onUpdate('cascade');
-            $table->timestamps();
         });
     }
 
