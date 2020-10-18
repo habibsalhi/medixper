@@ -10,39 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b10d799a-38d7-4641-a41d-4e731edad13d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/medixper.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/medixper.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Livewire/Agencies/Agencies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Livewire/Agencies/Agencies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Agency.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Agency.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_12_135849_create_agencies_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_12_135849_create_agencies_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_12_152235_create_trays_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_12_152235_create_trays_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_12_153037_create_sites_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_12_153037_create_sites_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_13_105858_create_patients_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_13_105858_create_patients_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_13_120220_create_clinicals_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_13_120220_create_clinicals_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_13_121852_create_clinical_doctors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_13_121852_create_clinical_doctors_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_13_130219_create_hotels_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_13_130219_create_hotels_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_13_145634_create_housing_prices_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_13_145634_create_housing_prices_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_13_152426_create_categories_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_10_13_152426_create_categories_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/mix-manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/public/mix-manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/bootstrap.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/bootstrap.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/livewire/agencies/agencies.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/livewire/agencies/agencies.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/webpack.mix.js" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.mix.js" afterDir="false" />
-    </list>
+    <list default="true" id="b10d799a-38d7-4641-a41d-4e731edad13d" name="Default Changelist" comment="commit 18/10/2020" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,7 +182,7 @@
       <workItem from="1602967059728" duration="691000" />
       <workItem from="1602970341322" duration="770000" />
       <workItem from="1602971336051" duration="4582000" />
-      <workItem from="1603027982367" duration="12921000" />
+      <workItem from="1603027982367" duration="13384000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1602578729445</created>
@@ -237,7 +205,14 @@
       <option name="project" value="LOCAL" />
       <updated>1602603615190</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit 18/10/2020">
+      <created>1603054327051</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1603054327051</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -260,7 +235,8 @@
     <MESSAGE value="initial commit" />
     <MESSAGE value="commit models" />
     <MESSAGE value="commit models(2)" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit models(2)" />
+    <MESSAGE value="commit 18/10/2020" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit 18/10/2020" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -278,9 +254,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="784" y="440" key="Github.CreateGistDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1602967112663" />
-    <state x="431" y="199" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1602603831570">
-      <screen x="72" y="27" width="1528" height="873" />
+    <state x="451" y="205" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1603054373787">
+      <screen x="0" y="0" width="1920" height="1040" />
     </state>
+    <state x="451" y="205" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1603054373787" />
     <state x="431" y="199" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1528.873@72.27.1528.873" timestamp="1602603831570" />
     <state x="717" y="254" key="VcsDiffUtil.ChangesDialog" timestamp="1602967177118">
       <screen x="0" y="0" width="1920" height="1040" />
