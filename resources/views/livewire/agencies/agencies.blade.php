@@ -50,7 +50,7 @@
 
     </div>
     <div class="mt-3 col-md-6 mx-auto">
-        {{ $agenciess->links() }}
+        {{ $agenciess->links('vendor.pagination.bootstrap-4') }}
     </div>
 </div>
 

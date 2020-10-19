@@ -23,7 +23,7 @@ class Agencies extends Component
     {
 
         return view('livewire.agencies.agencies', [
-            'agenciess' => agenc::paginate(10),
+            'agenciess' => agenc::latest()->paginate(10),
         ]);
     }
 
