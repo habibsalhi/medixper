@@ -3,28 +3,29 @@
         @include('livewire.agencies.create')
         @include('livewire.agencies.update')
         @if (session()->has('message'))
-            <div class="alert alert-success" style="margin-top:30px;">x
+            <div class="alert alert-success" style="margin-top:30px;">
                 {{ session('message') }}
+                <button type="button" class="close" data-dismiss="alert" aria-label="close">
+                    <span aria-hidden="true">×</span>
+                </button>
             </div>
         @endif
         <table class="table">
             <thead class="thead-dark">
             <tr class="bg-gray-100">
-                <th class="px-4 py-2 w-20">No.</th>
                 <th scope="px-4 py-2">Pays</th>
                 <th scope="px-4 py-2">Nom</th>
                 <th scope="px-4 py-2">Code</th>
                 <th scope="px-4 py-2">Email</th>
                 <th scope="px-4 py-2">Téléphone</th>
                 <th scope="px-4 py-2">Statut</th>
-                <th class="px-4 py-2">Action</th>
+                <th scope="px-4 py-2">Action</th>
             </tr>
             </thead>
             <tbody>
             @if ($agenciess)
                 @foreach($agenciess as $agency)
                     <tr>
-                        <td class="border px-4 py-2">{{ $agency->id }}</td>
                         <td class="border px-4 py-2">{{$agency->country}}</td>
                         <td class="border px-4 py-2">{{$agency->name}}</td>
                         <td class="border px-4 py-2">{{$agency->code}}</td>

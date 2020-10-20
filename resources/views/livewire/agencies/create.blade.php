@@ -1,7 +1,9 @@
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
-        wire:click.prevent="create()">
-    Ajouter
-</button>
+<div style="float: right;margin-bottom: 10px;">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+            wire:click.prevent="create()">
+        Ajouter
+    </button>
+</div>
 
 <!-- Modal -->
 <div wire:ignore.self class="modal fade" id="exampleModal" tabindex="-1" role="dialog"
